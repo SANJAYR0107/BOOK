@@ -1,0 +1,64 @@
+:root {
+  --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Theme Colors */
+  --bg-deep: #050912;
+  --bg-panel: rgba(11, 20, 36, 0.85);
+  --bg-panel-border: rgba(217, 174, 104, 0.22);
+  --bg-card: rgba(16, 28, 48, 0.7);
+
+  /* Gold Accents */
+  --gold-primary: #d9ae68;
+  --gold-glow: #f6d69b;
+  --gold-dark: #9e7432;
+  --gold-gradient: linear-gradient(135deg, #f7d89c 0%, #d9ae68 50%, #ad7e34 100%);
+  --gold-border: rgba(217, 174, 104, 0.4);
+
+  /* Text Colors */
+  --text-primary: #faf5ed;
+  --text-secondary: #c2cfdf;
+  --text-muted: #8596b0;
+  --text-gold: #e8c488;
+
+  /* Page paper tones */
+  --paper-cream: #faf6ed;
+  --shadow-warm: 0 20px 50px rgba(0, 0, 0, 0.6);
+  --shadow-gold: 0 0 25px rgba(217, 174, 104, 0.25);
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--gold-primary);
+  outline-offset: 2px;
+}
